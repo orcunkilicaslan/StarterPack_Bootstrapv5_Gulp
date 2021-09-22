@@ -1,10 +1,10 @@
 
 /* Site Main Path Settings */
-$cache-busting:                     #{'?v='}(unique_id());
-$path-assets-url:                   "../../../assets" !default;
-$path-fonts-url:                    "#{$path-assets-url}/fonts" !default;
-$path-img-url:                      "#{$path-assets-url}/img" !default;
-$path-img-url-icons:                "#{$path-img-url}/icons" !default;
+$cache-busting:                     #{'?v='} + unique_id();
+$path-assets-url:                   "../../../assets";
+$path-fonts-url:                    "#{$path-assets-url}/fonts";
+$path-img-url:                      "#{$path-assets-url}/img";
+$path-img-url-icons:                "#{$path-img-url}/icons";
 /* Site Main Path Settings */
 
 /* Site General Color Settings */
@@ -18,6 +18,18 @@ $site-clr-red:                        #B82C0D;
 $site-clr-orange:                     #E67948;
 $site-clr-yellow:                     #FF8C00;
 /* Site General Color Settings */
+
+/* Site Valid Color Settings */
+$site-result-dark-error-clr:            $site-clr-red;
+$site-result-dark-error-brdr:           $site-clr-red;
+$site-result-dark-error-bg:             $site-clr-white;
+$site-result-dark-success-clr:          $site-clr-green;
+$site-result-dark-success-brdr:         $site-clr-green;
+$site-result-dark-success-bg:           $site-clr-white;
+$site-result-dark-warning-clr:          $site-clr-orange;
+$site-result-dark-warning-brdr:         $site-clr-orange;
+$site-result-dark-warning-bg:           $site-clr-white;
+/* Site Valid Color Settings */
 
 /* Site Main Settings */
 $site-font-family-default:            'Barlow Semi Condensed', sans-serif;
